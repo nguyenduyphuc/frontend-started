@@ -1,0 +1,58 @@
+//shadow
+@mixin box-shadow($value) {
+		box-shadow: $value;
+-webkit-box-shadow: $value;
+   -moz-box-shadow: $value;
+    -ms-box-shadow: $value;
+     -o-box-shadow: $value;
+}
+
+//border-radius
+@mixin border-radius($value) {
+-webkit-border-radius: $value;
+   -moz-border-radius: $value;
+    -ms-border-radius: $value;
+	 -o-border-radius: $value;
+		border-radius: $value;
+}
+
+//transition
+@mixin transition($value){
+		transition: $value;
+-webkit-transition: $value;
+   -moz-transition: $value;
+    -ms-transition: $value;
+     -o-transition: $value;
+}
+
+//animation
+@mixin animation($value) {
+		animation: $value;
+-webkit-animation: $value;
+   -moz-animation: $value;
+    -ms-animation: $value;
+     -o-animation: $value;
+}
+
+// center vertically and/or horizontally an absolute positioned element
+@mixin center($xy:xy) {
+	@if $xy == xy {
+		left: 50%;
+		top: 50%;
+		bottom: auto;
+		right: auto;
+		@include transform(translateX(-50%) translateY(-50%));
+	}
+
+	@else if $xy == x {
+		left: 50%;
+		right: auto;
+		@include transform(translateX(-50%));
+	}
+
+	@else if $xy == y {
+		top: 50%;
+		bottom: auto;
+		@include transform(translateY(-50%));
+	}
+}

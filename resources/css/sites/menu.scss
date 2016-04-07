@@ -1,0 +1,155 @@
+.site-navbar {
+	position: relative;
+}
+
+.logo-main {
+	img {
+		padding-top: 60px;
+	}
+}
+
+.main-navigation {
+	text-transform: uppercase;
+}
+
+.mobile-nav {
+	float: right;
+    width: 60px;
+    padding-top: 50px;
+    text-align: center;
+    cursor: pointer;
+
+	i {
+	    font-size: 23px;
+	}
+}
+
+.mobile-header {
+    border-top: 3px solid #ccad52;
+    background: #000;
+    padding: 20px 20px 21px 20px;
+	color: #fff;
+    .title {
+		margin: 0;
+		padding: 0;
+		font-size: 17px;
+		font-weight: 700;
+    }
+}
+
+.mobile-close {
+	position: absolute;
+    top: 0;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    background: #bdc3c7;
+    padding-top: 17px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 1025px) {
+	.sf-menu {
+		padding-top: 50px;
+	}
+
+	.mobile-nav {
+    	display: none;
+	}
+
+	.hide-on-desktop {
+	    display: none;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.sf-menu, 
+	.sf-menu li,
+	.sf-menu a,
+	.sf-menu a:hover,
+	.sf-menu ul li,
+	.sf-menu ul li a,
+	.sf-menu ul li a:hover,
+	.sf-menu ul,
+	.sf-menu ul ul,
+	.sf-menu li:hover,
+	.sf-menu li:hover > ul,
+	.sf-menu li.sfHover > ul {
+		width: auto;
+	    height: auto;
+	    display: block;
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    background: #fff;
+	    padding: 0;
+	    margin: 0;
+	    float: none;
+	    font-size: 13px;
+	    font-weight: normal;
+	    line-height: 30px;
+	    border: 0;
+	    overflow: visible;
+	    -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+	}
+
+	.sf-menu ul li a, .sf-menu ul li a:hover {
+		position: relative;
+	    padding-left: 20px;
+	    color: #000;
+	}
+
+	.sf-menu li a, .sf-menu ul li a, .sf-menu li a:hover, .sf-menu ul li a:hover { 
+	    font-size: 12px;
+	    padding: 10px 30px 10px 20px;
+	    height: auto;
+	    color: #000;
+	}
+
+	.sf-menu a:hover, .sf-menu ul li a:hover {
+		background: #000;
+	    color: #fff;
+	    transition: 0.3s ease-in;
+	    -webkit-transition: 0.3s ease-in;
+	    -moz-transition: 0.3s ease-in;
+	    -o-transition: 0.3s ease-in;
+	}
+
+	.sf-menu ul li a:before, .sf-menu ul li a:hover:before {
+	    content: "\f0da";
+	    font-family: "FontAwesome";
+	    color: #dedede;
+	    margin: -3px 12px 0 0;
+	    opacity: 1;
+	    -moz-opacity: 1;
+	}
+
+	.sf-menu ul ul li a, .sf-menu ul ul li:hover a {//Just effect until 3 layer
+		padding-left: 40px;
+	}
+
+	.main-navigation {
+		display: none;
+		background: #fff;
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+		-webkit-box-shadow: 0 0 48px #000;
+		-moz-box-shadow: 0 0 48px #000;
+		box-shadow: 0 0 48px #000;
+	}
+}

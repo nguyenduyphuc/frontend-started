@@ -1,0 +1,14 @@
+@import "modules/_author";
+@import "modules/_reset";
+@import 'modules/_variables'; // colors, fonts etc...
+@import 'modules/_animate';//animation
+@import "modules/_mixin";
+@import "modules/_typography";
+
+
+//main-stylesheets
+@import "sites/menu.scss";
+@import "sites/mainpage.scss";
+
+// responsive grid and media queries, must after mainpage.scss.
+@import "modules/_layout";
